@@ -112,31 +112,3 @@ func NewMenu() Menu {
 	return Menu{list: l}
 
 }
-
-//func main() {
-//	items := []list.Item{
-//		item("Containers"),
-//		item("Images"),
-//		item("Volumes"),
-//	}
-//
-//	const defaultWidth = 20
-//
-//	l := list.New(items, itemDelegate{}, defaultWidth, listHeight)
-//	l.SetShowTitle(false)
-//	l.SetShowStatusBar(false)
-//	l.SetFilteringEnabled(false)
-//	l.SetShowHelp(true)
-//	l.Styles.Title = titleStyle
-//	l.Styles.PaginationStyle = paginationStyle
-//	l.Styles.HelpStyle = helpStyle
-//
-//	// Set up border
-//
-//	m := Menu{list: l}
-//
-//	if err := tea.NewProgram(m).Start(); err != nil {
-//		fmt.Println("Error running program:", err)
-//		os.Exit(1)
-//	}
-//}

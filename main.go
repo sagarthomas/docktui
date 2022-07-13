@@ -30,6 +30,8 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	return m, tea.Batch(cmds...)
 }
 func (m model) View() string {
+	// The root model is in charge of rendering two components: the menu, and
+	// the main view screen that reflects the corresponding items in the menu
 	return m.menu.View()
 }
 
